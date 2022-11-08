@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dlg_pdb</class>
+ <widget class="QWidget" name="dlg_pdb">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>586</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Transformation DFI</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox {
+	margin-top: 16px;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+QGroupBox::title {
+	subcontrol-origin: margin;
+    subcontrol-position: top left;
+	padding: 2px 5px 2px 5px;
+	margin: 2px 0px 0px 0px;
+	border:1px solid gray;
+	border-radius: 2px;
+	background: #696969;
+	color: #ffffff;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="spacing">
+    <number>9</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="rep_gb">
+     <property name="title">
+      <string>Choix du fichier DFI à transformer</string>
+     </property>
+     <layout class="QGridLayout" name="rep_glay">
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="rep_led">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="fic_bt">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QGroupBox" name="msg_gb">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+	margin-top: 16px;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+QGroupBox::title {
+	subcontrol-origin: margin;
+    subcontrol-position: top left;
+	padding: 2px 5px 2px 5px;
+	margin: 2px 0px 0px 0px;
+	border:1px solid gray;
+	border-radius: 2px;
+	background: #999999;
+	color: #ffffff;
+}</string>
+     </property>
+     <property name="title">
+      <string>Messages traitement</string>
+     </property>
+     <layout class="QGridLayout" name="rep_glay_2">
+      <property name="horizontalSpacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="msg_ted"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <spacer name="vspacer1">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="validbt_lay">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item>
+      <spacer name="hspacer1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="valid_bt">
+       <property name="minimumSize">
+        <size>
+         <width>170</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Lancer le traitement &gt;&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
