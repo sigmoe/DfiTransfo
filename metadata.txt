@@ -1,0 +1,18 @@
+[general]
+name=DFI Transformation
+email=em@sigmoe.fr
+author=Etienne MORO
+qgisMinimumVersion=3.22
+description=Specific plugin only for French people to transform a DFI file in a geopackage layer with a better useful structure.
+ DFI = Documents de filiation informatisés des parcelles
+about=Cette extension fournit une fonction permettant de transformer un fichier DFI (Documents de filiation informatisés des parcelles) au format TXT en une couche GeoPackage restructurée, permettant de retrouver facilement la filiation des parcelles. Cette nouvelle couche de données DFI restructurée peut ensuite servir pour retrouver la/les nouvelle(s) parcelles(s) à partir d'un identifiant parcelaire d'une ancienne parcelle, en utilisant la nouvelle fonction de recherche de filiation <b>dfi_find_newparc()</b> disponible dans le calculateur d'expression (cf. vidéo en lien).
+version=1.0.3
+tags=transformation dfi,sigmoé, sigmoe, documents de filiation informatisés des parcelles
+homepage=https://sigmoe.fr/nouvelle-video-extension-qgis-deplace-lignes-sur-points-par-attribut
+tracker=https://github.com/sigmoe/DfiTransfo/issues
+repository=https://github.com/sigmoe/DfiTransfo
+icon=icons/sgm_dfitr.png
+experimental=False
+changelog=
+ <i>Version 1.0.3 - 2022/11/08</i>
+ * First public version

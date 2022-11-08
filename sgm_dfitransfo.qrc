@@ -1,0 +1,5 @@
+<RCC>
+    <qresource lang="fre">
+        <file alias="sgm_dfitr">icons/sgm_dfitr.png</file>
+    </qresource>
+</RCC>
